@@ -1,0 +1,3 @@
+"""
+Othello game backend application.
+"""

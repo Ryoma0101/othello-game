@@ -1,0 +1,31 @@
+{
+  "name": "@fuka/deno-othello",
+  "version": "0.1.0",
+  "description": "Othello game frontend built with Deno, React, and Vite",
+  "exports": "./src/main.tsx",
+  "tasks": {
+    "dev": "deno run --allow-all npm:vite",
+    "build": "deno run --allow-all npm:vite build",
+    "preview": "deno run --allow-all npm:vite preview",
+    "test": "deno test --allow-all"
+  },
+  "license": "MIT",
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@18.2.0/jsx-dev-runtime",
+    "vite": "npm:vite@^5.0.0",
+    "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^4.0.0",
+    "@types/react": "npm:@types/react@^18.2.0",
+    "@types/react-dom": "npm:@types/react-dom@^18.2.0",
+    "typescript": "npm:typescript@^5.0.0"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["DOM", "ES2022"],
+    "types": ["react", "react-dom"]
+  }
+}

@@ -1,0 +1,49 @@
+[project]
+name = "python-copilot"
+version = "0.1.0"
+description = "Othello game with CPU player"
+authors = [
+    { name = "fuka", email = "fuka@example.com" }
+]
+dependencies = [
+    "fastapi>=0.115.14",
+    "numpy>=1.24.0",
+    "uvicorn>=0.35.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "anyio>=4.0.0",
+    "ruff>=0.1.0",
+    "pyright>=1.1.0",
+    "pre-commit>=3.0.0",
+]
+
+[project.scripts]
+othello = "python_copilot.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_copilot"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pyright]
+pythonVersion = "3.10"
+typeCheckingMode = "strict"
