@@ -29,7 +29,7 @@ Python バックエンドと React フロントエンドで構築された AI �
 ## プロジェクト構成
 
 ```
-python-copilot/
+othello-game/
 ├── backend/                 # Pythonバックエンド
 │   ├── app/
 │   │   ├── main.py         # FastAPIアプリケーション

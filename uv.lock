@@ -473,7 +473,7 @@ wheels = [
 ]
 
 [[package]]
-name = "python-copilot"
+name = "othello-game"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

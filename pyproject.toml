@@ -1,5 +1,5 @@
 [project]
-name = "python-copilot"
+name = "othello-game"
 version = "0.1.0"
 description = "Othello game with CPU player"
 authors = [
